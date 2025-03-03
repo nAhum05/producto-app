@@ -1,0 +1,23 @@
+{
+  "name": "producto-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nAhum05/producto-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nAhum05/producto-app/issues"
+  },
+  "homepage": "https://github.com/nAhum05/producto-app#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
