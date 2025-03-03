@@ -11,10 +11,14 @@ app.use(cors()); // Para permitir solicitudes CORS desde otros dominios
 
 // Conexión a la base de datos de MongoDB
 mongoose
+<<<<<<< HEAD
   .connect('mongodb://localhost:27017/productdb', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
+=======
+  .connect('mongodb://localhost:27017/productdb')
+>>>>>>> prueba
   .then(() => console.log('Conectado a MongoDB'))
   .catch((err) => console.log('Error al conectar con MongoDB:', err));
 
@@ -28,7 +32,11 @@ app.get('/api/products', async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 // Ruta para agregar un producto (opcional)
+=======
+// Ruta para agregar un producto
+>>>>>>> prueba
 app.post('/api/products', async (req, res) => {
   const { name, price } = req.body;
   const newProduct = new Product({ name, price });
