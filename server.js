@@ -2,9 +2,12 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Ruta de ejemplo
+// Middleware para parsear JSON
+app.use(express.json());
+
+// Ruta de prueba
 app.get('/', (req, res) => {
-  res.send('¡Hola Mundo!');
+  res.send('¡Servidor funcionando!');
 });
 
 // Iniciar el servidor
